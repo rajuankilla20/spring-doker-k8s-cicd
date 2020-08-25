@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-RUN mkdir -p /spring-app
-COPY target/*.jar /spring-app/
+VOLUME /tmp
 EXPOSE 8080
+ADD target/*.jar app.jar
 ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]
