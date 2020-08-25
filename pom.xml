@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>rajuankilla20</groupId>
 	<artifactId>spring-doker-k8s-cicd</artifactId>
-	<version>1.29-RELEASE-SNAPSHOT</version>
+	<version>1.30-RELEASE-SNAPSHOT</version>
 	<name>spring-doker-k8s-cicd</name>
 	<description>Demo project for Spring Boot</description>
 
