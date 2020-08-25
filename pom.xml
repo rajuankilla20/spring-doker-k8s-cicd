@@ -23,13 +23,7 @@
 		<developerConnection>scm:git:https://github.com/${project.groupId}/${project.artifactId}</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-
-<!--	<scm>
-		<connection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd</connection>
-		<developerConnection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd</developerConnection>
-		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd</url>
-		<tag>HEAD</tag>
-	</scm>-->
+ 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
