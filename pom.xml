@@ -20,14 +20,9 @@
 	</properties>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/${project.groupId}/${project.artifactId}</developerConnection>
-		<!--git@github.com:rajuankilla20/spring-doker-k8s-cicd.git-->
-		<!--<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
---><!--
-	 	<connection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</connection>
-		<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
-		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>-->
-
+		<connection>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</connection>
+		<developerConnection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
+		<url> https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>
 		<tag>HEAD</tag>
 	</scm> 
 	<dependencies>
@@ -76,8 +71,8 @@
 				</executions>
 				<configuration>
 					<username>${project.groupId}</username>
-					<password>${env.MY_DOCKER_HUB_TOKEN}</password>
-					<repository>${project.groupId}/${project.artifactId}</repository>
+					<password>${env.DOCKER_HUB_TOKEN}</password>
+					<repository>registry.hub.docker.com/${project.groupId}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 				</configuration>
 			</plugin>
