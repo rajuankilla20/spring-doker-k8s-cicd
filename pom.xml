@@ -22,7 +22,7 @@
 	<scm>
 		<connection>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</connection>
 		<developerConnection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
-		<url> https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>
+		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>
 		<tag>HEAD</tag>
 	</scm> 
 	<dependencies>
@@ -86,14 +86,50 @@
 				<version>2.5.3</version>
 				<configuration>
 					<tagNameFormat>@{project.version}</tagNameFormat>
-					<goals>install</goals>
-					<!-- <goals>pre-integration-test</goals>
+<!--					<goals>install</goals>-->
+					 <goals>pre-integration-test</goals>
                         <preparationGoals>package</preparationGoals>
                         <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-                        <remoteTagging>false</remoteTagging>-->
+                        <remoteTagging>false</remoteTagging>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
