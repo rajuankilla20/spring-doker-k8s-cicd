@@ -17,14 +17,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<!--		<java.version>1.8</java.version>-->
 	</properties>
 
 	<scm>
 		<connection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</connection>
 		<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
 		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd</url>
-		<tag>HEAD</tag> 
+		<tag>HEAD</tag>
 	</scm> 
 	<dependencies>
 		<dependency>
@@ -72,7 +71,7 @@
 				</executions>
 				<configuration>
 					<username>${project.groupId}</username>
-					<password>${env.DOCKER_HUB_TOKEN}</password>
+					<password>${env.MY_DOCKER_HUB_TOKEN}</password>
 					<repository>${project.groupId}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 				</configuration>
