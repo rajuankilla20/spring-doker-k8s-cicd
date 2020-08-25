@@ -102,7 +102,7 @@
 				<configuration>
 					<username>${project.groupId}</username>
 					<password>${env.DOCKER_HUB_TOKEN}</password>
-					<repository>registry.hub.docker.com/${project.groupId}/${project.artifactId}</repository>
+					<repository>${project.groupId}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 				</configuration>
 			</plugin>
@@ -116,8 +116,9 @@
 				<version>2.5.3</version>
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
-					<!--<goals>pre-integration-test</goals>
 					<preparationGoals>package</preparationGoals>
+					<!--<goals>pre-integration-test</goals>
+
 					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 					<remoteTagging>false</remoteTagging>-->
 				</configuration>
