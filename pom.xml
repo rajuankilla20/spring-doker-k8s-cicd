@@ -10,7 +10,7 @@
 	<groupId>rajuankilla20</groupId>
 	<artifactId>spring-doker-k8s-cicd</artifactId>
  
-	<version>1.218-RELEASE-SNAPSHOT</version> 
+	<version>1.218-RELEASE</version> 
 	<name>spring-doker-k8s-cicd</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -24,7 +24,7 @@
 		<connection>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</connection>
 		<developerConnection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
 		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>
-		<tag>HEAD</tag>
+		<tag>1.218-RELEASE</tag>
 	</scm>
 	<dependencies>
 		<dependency>
