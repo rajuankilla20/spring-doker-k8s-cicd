@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>rajuankilla20</groupId>
 	<artifactId>spring-doker-k8s-cicd</artifactId>
-	<version>1.165-RELEASE-SNAPSHOT</version>
+	<version>1.182-RELEASE-SNAPSHOT</version>
 	<name>spring-doker-k8s-cicd</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -89,7 +89,7 @@
 					<goals>pre-integration-test</goals>
 					<preparationGoals>package</preparationGoals>
 					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-					<remoteTagging>false</remoteTagging> 
+					<remoteTagging>false</remoteTagging>
 				</configuration>
 			</plugin>
 		</plugins>
