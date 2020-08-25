@@ -19,7 +19,6 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-
 	<scm>
 		<connection>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</connection>
 		<developerConnection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
@@ -87,11 +86,10 @@
 				<version>2.5.3</version>
 				<configuration>
 					<tagNameFormat>@{project.version}</tagNameFormat>
-					<!--					<goals>install</goals>-->
 					<goals>pre-integration-test</goals>
 					<preparationGoals>package</preparationGoals>
 					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-					<remoteTagging>false</remoteTagging>
+					<remoteTagging>false</remoteTagging> 
 				</configuration>
 			</plugin>
 		</plugins>
