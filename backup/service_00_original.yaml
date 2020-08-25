@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-08-10T14:20:24Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: helloworld
+  name: helloworld
+  namespace: default
+  resourceVersion: "1316363"
+  selfLink: /api/v1/namespaces/default/services/helloworld
+  uid: 901d3bc4-f20c-4280-bfb7-9f4e1360652a
+spec:
+  clusterIP: 10.0.8.168
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31758
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: helloworld
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 34.69.96.11
