@@ -19,13 +19,15 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-	<scm> <!--git@github.com:rajuankilla20/spring-doker-k8s-cicd.git-->
+	<scm>
+		<developerConnection>scm:git:https://github.com/${project.groupId}/${project.artifactId}</developerConnection>
+		<!--git@github.com:rajuankilla20/spring-doker-k8s-cicd.git-->
+		<!--<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
+--><!--
+	 	<connection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</connection>
 		<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
+		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>-->
 
-	<!--	<connection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</connection>
-		<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
-		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>
-		-->
 		<tag>HEAD</tag>
 	</scm> 
 	<dependencies>
