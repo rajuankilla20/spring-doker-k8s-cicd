@@ -20,7 +20,7 @@
 	</properties>
 
 	<scm> <!--git@github.com:rajuankilla20/spring-doker-k8s-cicd.git-->
-		<developerConnection>scm:git:https://github.com/${project.groupId}/${project.artifactId}.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
 
 	<!--	<connection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</connection>
 		<developerConnection>scm:git:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
