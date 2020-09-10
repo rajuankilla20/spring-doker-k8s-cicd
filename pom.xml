@@ -8,8 +8,8 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>rajuankilla20</groupId>
-	<artifactId>spring-doker-k8s-cicd</artifactId>
- 
+	<artifactId>spring-doker-k8s-cicd</artifactId> 	
+ 	<packaging>jar</packaging>
 	<version>1.225-RELEASE-SNAPSHOT</version> 
 	<name>spring-doker-k8s-cicd</name>
 	<description>Demo project for Spring Boot</description>
