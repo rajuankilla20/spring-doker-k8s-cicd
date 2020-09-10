@@ -21,11 +21,12 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</connection>
-		<developerConnection>scm:git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
-		<url>git@github.com:rajuankilla20/spring-doker-k8s-cicd.git</url>
+		<connection>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</connection>
+		<developerConnection>scm:git:https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</developerConnection>
+		<url>https://github.com/rajuankilla20/spring-doker-k8s-cicd.git</url>
 		<tag>HEAD</tag>
 	</scm>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
