@@ -30,3 +30,5 @@ jobs:
       env:
         DOCKER_HUB_TOKEN: ${{ secrets.MY_DOCKER_HUB_TOKEN }}
       run: mvn --batch-mode release:perform 
+    - name: Check docker images
+      run: docker images
