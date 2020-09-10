@@ -54,23 +54,21 @@
 				<version>1.4.12</version>
 				<executions>
 					<execution>
-						<id>default</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>build</goal>
-							<goal>push</goal>
-						</goals>
+					    <id>default</id>
+					    <goals>
+						<goal>build</goal>
+						<goal>push</goal>
+					    </goals>
 					</execution>
 					<execution>
-						<id>tag-latest</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>build</goal>
-							<goal>push</goal>
-						</goals>
-						<configuration>
-							<tag>latest</tag>
-						</configuration>
+					    <id>tag-latest</id>
+					    <goals>
+						<goal>build</goal>
+						<goal>push</goal>
+					    </goals>
+					    <configuration>
+						<tag>latest</tag>
+					    </configuration>
 					</execution>
 				</executions>
 				<configuration>
@@ -78,7 +76,6 @@
 					<password>${env.DOCKER_HUB_TOKEN}</password>
 					<repository>registry.hub.docker.com/${project.groupId}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
-					<pushImage>true</pushImage>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -91,10 +88,6 @@
 				<version>2.5.3</version>
 				<configuration>
 					<tagNameFormat>@{project.version}</tagNameFormat>
-					<goals>pre-integration-test</goals>
-					<preparationGoals>package</preparationGoals>
-					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-					<remoteTagging>false</remoteTagging>
 				</configuration>
 			</plugin>
 		</plugins>
