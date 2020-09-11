@@ -24,7 +24,12 @@
     - If something goes wrong it updates the scm tag and release version withtout snapshot, which we have to take care.
     - It's having more valid pros than cons.
 # How to run this project
-
+   * Below changes are required to run this project
+     * **gitactions-wf.yml** : Change  secrets.MY_GITHUB_TOKEN, secrets.MY_DOCKER_HUB_TOKEN, email
+     * **pom.xml** : <dockerfile-maven-plugin>.<username>${project.groupId}</username> , groupId should be dockerhub userid or directly hard code here.
+     * Copy the code from this branch to your respective master repository
+     * Create a feature branch from master and do some modifications and create a Pullrequest merge to master. Once its merged goto actions tab in github and your build will be triggerd and the docker image will be build and pushed to docker hub. Login to docker hub and check the created tag with version number and one with latest.
+	
 # Troubleshooting
 #### Problem 1: Could not build image: When using ADD with more than one source file, the destination must be a directory and end with a /
    * When we use the below line in  **Dockerfile** file, we will get the above error. 
