@@ -19,8 +19,25 @@
     - It wont allow if any snapshot depenency in pom.
     - If something goes wrong it updates the scm tag and release version withtout snapshot, which we have to take care.
     - It's having more valid pros than cons.
-# Important problem solutions 
-#### Could not build image: When using ADD with more than one source file, the destination must be a directory and end with a 
-    - When we use this line in  Dockerfile  ADD or COPY target/*.jar app.jar
+# Troubleshooting
+#### Problem: Could not build image: When using ADD with more than one source file, the destination must be a directory and end with a /
+   * When we use the below line in  **Dockerfile** file, we will get the above error. 
+   > ADD or COPY target/*.jar app.jar
+#### Solution:  : It means we have to give the exact generted jar file in target folder. But it will generate <project.name>-<project.verion> which we cannot manually enter.
+   * We have to control the jar file name using  **maven-jar-plugin**  in pom.xml, which  will generate jar with project.name and we can directly use ** ADD OR COPY target/<project.name>.jar app.ar** in docerfile
+        ````pom.xml
+        <build>
+		    <plugins>
+                <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>2.3.2</version>
+                        <configuration>
+                            <finalName>${project.name}</finalName>
+                        </configuration>
+                </plugin>
+             </plugins>
+         <build>    
+        ````   
     
     
